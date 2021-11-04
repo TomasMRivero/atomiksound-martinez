@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Mono:wght@100;300;500;700;900&family=Raleway:ital,wght@0,100;0,300;0,500;0,700;0,900;1,100;1,300;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/contacto.css">
+</head>
+<body>
+    <header>
+        <div>
+            <a href="../index.html"><img src="" alt="Logo"></a>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="../index.html"><span></span>Inicio</a></li>
+                <li><a href="./productos.html"><span></span>Productos</a></li>
+                <li><a href="./nosotros.html"><span></span>Nosotros</a></li>
+                <li><a id="current" href="./contacto.html"><span></span>Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <form action="">
+            <fieldset>
+                <legend>Contacto</legend>
+                <div>
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" name="nombre" id="" placeholder="Nombre" required>
+                </div>
+                <div>
+                    <label for="ubicacion">Ubicación:</label>
+                    <select name="ubicacion" id="">
+                        <option value="CABA">CABA</option>
+                        <option value="Buenos Aires">Buenos Aires</option>
+                        <option value="Cordoba">Cordoba</option>
+                        <option value="Rosario">Rosario</option>
+                        <option value="Otro">Otro</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="mail">Mail:</label>
+                    <input type="email" name="mail" id="" placeholder="Mail" required>
+                </div>
+                <div>
+                    <label for="mensaje">Mensaje:</label>
+                    <br>
+                    <textarea name="mensaje" id="" cols="30" rows="10" placeholder="Ingrese su mensaje:"></textarea>
+                </div>
+                <div>
+                    <input type="checkbox" name="suscribirse" id="" value="1">
+                    <span>Deseo recibir novedades sobre nuevos productos.</span>
+                </div>
+                <div class="btn">
+                    <input class="boton" type="reset" value="Borrar">
+                    <input class="boton boton--enviar" type="submit" value="Enviar">
+                </div>
+            </fieldset>
+        </form>
+    </main>
+    <footer>
+        <h4>Contenido del footer</h4>
+    </footer>
+</body>
+</html>

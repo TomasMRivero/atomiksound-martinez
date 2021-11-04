@@ -1,0 +1,65 @@
+body {
+	width: 100%;
+	color: #13131d;
+	background-color: white;
+	overflow-x: hidden;
+	font-family: "Raleway", sans-serif;
+}
+
+header {
+	width: 100%;
+	height: 14vh;
+	background-color: #f0f0f0;
+	z-index: 10000;
+	display: flex;
+	justify-content: space-between;
+}
+
+header nav {
+	align-self: flex-end;
+	min-width: 40%;
+}
+
+header nav ul {
+	display: flex;
+	justify-content: flex-end;
+}
+header nav li {
+	list-style: none;
+	box-sizing: border-box;
+	border-left: 1px solid #13131e;
+	overflow: hidden;
+}
+
+header nav li a {
+	padding: 0.3rem 1rem;
+	position: relative;
+	color: indigo;
+	text-decoration: none;
+	z-index: 1;
+}
+header nav li a:before {
+	content: "";
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: white;
+	z-index: -1;
+	transform: translateY(100%);
+	transition: all 0.25s ease-out;
+}
+header nav li:hover a:before {
+	transform: translateY(0%);
+}
+
+header nav li #current {
+	color: orange;
+}
+
+footer {
+	height: 14vh;
+	color: white;
+	background-color: indigo;
+}
