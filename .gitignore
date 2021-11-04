@@ -1,6 +1,7 @@
-
 *.pdf
-
 *.fig
-
 *.zip
+.sass-cache
+.idea/
+dist/
+node_modules/

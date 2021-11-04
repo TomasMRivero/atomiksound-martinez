@@ -1,0 +1,19 @@
+{
+  "name": "proyecto-final",
+  "version": "1.0.0",
+  "description": "Proyecto Final",
+  "main": "index.js",
+  "scripts": {
+    "compile:sass": "sass --watch scss:css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TomasMRivero/atomiksound-martinez.git"
+  },
+  "author": "Tomas Martinez",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/TomasMRivero/atomiksound-martinez/issues"
+  },
+  "homepage": "https://github.com/TomasMRivero/atomiksound-martinez#readme"
+}
