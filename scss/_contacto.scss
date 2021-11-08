@@ -2,7 +2,7 @@
 	@extend .nosotrosMain;
 	min-height: 86vh;
 	padding: 5%;
-	& form {
+	form {
 		margin: auto;
 		height: 100%;
 		border: 2px solid #13131e;
@@ -10,43 +10,43 @@
 		padding-top: 0;
 		display: flex;
 		flex-direction: column;
-		& fieldset {
-			& legend {
+		fieldset {
+			legend {
 				background-color: white;
 				padding: 0 5%;
 				text-align: center;
 				font-size: 1.8rem;
 				transform: translateY(-50%);
 			}
-			& div {
+			div {
 				margin: 1rem;
 				padding: 0.5rem;
 				border: 1px solid #13131e;
 				display: flex;
-				& input {
+				input {
 					flex: 1;
 					padding-left: 0.3rem;
 				}
 			}
-			& .msj {
+			.msj {
 				flex-direction: column;
-				& textarea {
+				textarea {
 					margin-top: 0.3rem;
 					padding: 0.3rem;
 					resize: none;
 				}
 			}
-			& .chk {
+			.chk {
 				display: inherit;
 			}
-			& .btn {
+			.btn {
 				margin: 1rem;
 				padding: 0.5rem;
 				border: 0;
 				display: flex;
 				flex-wrap: wrap;
 			}
-			& .boton {
+			.boton {
 				padding: 0.5rem 3rem;
 				border: 1px solid #13131e;
 				background-color: white;

@@ -2,7 +2,7 @@
 	@extend .landing;
 	&__mainImg {
 		@extend %bigSection;
-		& img {
+		img {
 			width: auto;
 			height: 100%;
 		}
@@ -20,12 +20,12 @@
 		padding: 5%;
 		border: 2px solid #13131e;
 		position: relative;
-		& h1 {
+		h1 {
 			font-size: 2.8rem;
 			margin-bottom: 2rem;
 			font-family: "Raleway", sans-serif;
 		}
-		& p {
+		p {
 			padding: 1.5rem;
 			font-weight: 300;
 			text-align: justify;
@@ -35,7 +35,7 @@
 			transform: translateX(5%);
 			z-index: 100;
 		}
-		& a {
+		a {
 			color: orange;
 			text-decoration: underline;
 			display: block;
@@ -54,10 +54,10 @@
 		margin: 10px;
 		border-collapse: collapse;
 		background-color: #f0f0f0;
-		& td {
+		td {
 			border: 1px solid white;
 			padding: 1rem;
-			& ul,
+			ul,
 			ol {
 				padding-left: 3rem;
 				font-weight: 300;

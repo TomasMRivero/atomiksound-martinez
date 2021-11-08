@@ -23,6 +23,11 @@ header {
   display: flex;
   justify-content: space-between;
 }
+header img {
+  padding: 1rem;
+  width: auto;
+  height: 100%;
+}
 header nav {
   align-self: flex-end;
   min-width: 40%;
@@ -37,7 +42,7 @@ header nav ul li {
   border-left: 1px solid #13131e;
   overflow: hidden;
 }
-header nav ul li#current {
+header nav ul li #current {
   color: orange;
 }
 header nav ul li a {

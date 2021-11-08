@@ -21,7 +21,7 @@
 	margin: auto;
 	width: 100%;
 	padding: 5%;
-	& p {
+	p {
 		font-weight: 300;
 		margin: 10px;
 		margin-left: 10%;
@@ -48,14 +48,14 @@
 	border-bottom: 1px solid #13131e;
 	&__mainImg {
 		@extend %bigSection;
-		& img {
+		img {
 			width: auto;
 			height: 100%;
 		}
 	}
-	& aside {
+	aside {
 		@extend %aside;
-		& a {
+		a {
 			display: block;
 			text-align: center;
 			font-size: 1.8rem;
@@ -64,12 +64,12 @@
 	}
 	&__content {
 		@extend %content;
-		& h1 {
+		h1 {
 			font-size: 2.8rem;
 			margin: 15px;
 			font-family: "Raleway", sans-serif;
 		}
-		& p {
+		p {
 			font-weight: 300;
 			margin: 10px;
 			margin-left: 10%;
@@ -89,16 +89,16 @@
 		grid-template-columns: 1fr 1fr 1fr;
 		grid-template-rows: 1fr 1fr;
 	}
-	& aside {
+	aside {
 		left: 0;
 		@extend %aside;
-		& a {
+		a {
 			@extend %a;
 		}
 	}
 	&__content {
 		@extend %content;
-		& h2 {
+		h2 {
 			font-family: "Raleway", sans-serif;
 			font-size: 2rem;
 		}
@@ -121,7 +121,7 @@
 		align-content: center;
 		justify-content: center;
 		border: #13131e 1px solid;
-		& a {
+		a {
 			width: 100%;
 			height: 100%;
 			overflow: hidden;
@@ -129,15 +129,15 @@
 			align-content: center;
 			justify-content: center;
 		}
-		& img {
+		img {
 			margin: auto;
 			width: 100%;
 			height: auto;
 		}
-		& h3 {
+		h3 {
 			color: orange;
 		}
-		& h5 {
+		h5 {
 			width: 100%;
 			padding: 0.3rem;
 			text-align: center;
