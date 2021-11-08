@@ -1,0 +1,70 @@
+.nosotrosMain {
+	width: 70%;
+	margin: auto;
+}
+
+.main {
+	width: 100%;
+	height: 86vh;
+	padding: 3rem;
+	background-image: url("../img/D0OoKHI.jpg");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	background-color: #13131e;
+	&__content {
+		width: 70%;
+		height: 100%;
+		padding: 3rem;
+		border: 2px solid white;
+		color: white;
+		display: flex;
+		flex-direction: column;
+		transition: background-color 1s;
+		& h1 {
+			text-shadow: 4px 4px 8px #13131e;
+			font-size: 2.8rem;
+			margin-bottom: 2rem;
+			font-family: "Raleway", sans-serif;
+			transition: all 1s;
+		}
+		& p {
+			width: 120%;
+			padding: 1.5rem;
+			font-weight: 300;
+			text-align: justify;
+			color: white;
+			background-color: #13131e;
+			z-index: 100;
+			transform: translateX(5%);
+			transition: transform 1s;
+		}
+		&:hover {
+			background-color: rgba(13, 13, 18, 0.5);
+			& p {
+				transform: translateX(10%);
+			}
+			& h1 {
+				font-size: 3rem;
+				margin-bottom: 1.8rem;
+			}
+		}
+	}
+}
+
+.more {
+	padding: 6rem;
+	padding-top: 3rem;
+	& h2 {
+		font-size: 2rem;
+		margin-bottom: 2rem;
+		font-family: "Raleway", sans-serif;
+	}
+	& p {
+		font-size: 1.2rem;
+		width: 80%;
+		font-weight: 300;
+		text-align: justify;
+		margin-bottom: 2rem;
+	}
+}
