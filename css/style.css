@@ -9,7 +9,7 @@
 
 body {
   width: 100%;
-  color: #13131d;
+  color: #13131e;
   background-color: white;
   overflow-x: hidden;
   font-family: "Raleway", sans-serif;
@@ -371,7 +371,7 @@ footer {
   padding: 1rem;
   padding-left: 0;
   height: 100%;
-  color: #13131d;
+  color: #13131e;
   font-size: 1rem;
   flex: 1;
   display: flex;
