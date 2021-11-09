@@ -7,6 +7,10 @@
 	box-sizing: border-box;
 }
 
+a {
+	text-decoration: none;
+}
+
 body {
 	width: 100%;
 	color: $main-black;
@@ -15,59 +19,71 @@ body {
 	font-family: $text-font-title;
 }
 
-header {
+// header {
+// 	width: 100%;
+// 	min-height: 14vh;
+// 	background-color: #f0f0f0;
+// 	z-index: 10000;
+// 	display: flex;
+// 	justify-content: space-between;
+// 	img {
+// 		padding: 1rem;
+// 		width: auto;
+// 		height: 100%;
+// 	}
+
+.fullscreen {
 	width: 100%;
-	height: 14vh;
-	background-color: #f0f0f0;
-	z-index: 10000;
+	height: 100vh;
 	display: flex;
-	justify-content: space-between;
-	img {
-		padding: 1rem;
-		width: auto;
-		height: 100%;
-	}
-	nav {
-		align-self: flex-end;
-		min-width: 40%;
-		ul {
-			display: flex;
-			justify-content: flex-end;
-			li {
-				list-style: none;
-				box-sizing: border-box;
-				border-left: 1px solid $main-black;
-				overflow: hidden;
-				#current {
-					color: $highlights;
+	flex-direction: column;
+}
+
+.navbar {
+	padding: 0;
+	z-index: 100000;
+}
+nav {
+	align-self: flex-end;
+	min-width: 40%;
+	ul {
+		display: flex;
+		justify-content: flex-end;
+		li {
+			list-style: none;
+			box-sizing: border-box;
+			border-left: 1px solid $main-black;
+			overflow: hidden;
+			#current {
+				color: $highlights;
+			}
+			a {
+				padding: 0.3rem 1rem;
+				font-size: 1.2rem;
+				position: relative;
+				color: $highlights-dark;
+				text-decoration: none;
+				z-index: 1;
+				&:before {
+					content: "";
+					position: absolute;
+					bottom: 0;
+					left: 0;
+					width: 100%;
+					height: 100%;
+					background-color: $main-white;
+					z-index: -1;
+					transform: translateY(100%);
+					transition: all 0.25s ease-out;
 				}
-				a {
-					padding: 0.3rem 1rem;
-					font-size: 1.2rem;
-					position: relative;
-					color: $highlights-dark;
-					text-decoration: none;
-					z-index: 1;
-					&:before {
-						content: "";
-						position: absolute;
-						bottom: 0;
-						left: 0;
-						width: 100%;
-						height: 100%;
-						background-color: $main-white;
-						z-index: -1;
-						transform: translateY(100%);
-						transition: all 0.25s ease-out;
-					}
-				}
-				&:hover a:before {
-					transform: translateY(0%);
-				}
+			}
+			&:hover a:before {
+				transform: translateY(0%);
 			}
 		}
 	}
 }
+//}
 
 footer {
 	height: 14vh;
