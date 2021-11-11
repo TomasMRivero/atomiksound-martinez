@@ -18,17 +18,16 @@
     <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
-    <div class="fullscreen">
-        <nav class="navbar container-fluid navbar-expand-lg navbar-light bg-light position-sticky top-0 start-0">
-            <div class="container-fluid">
-            <a class="navbar-brand" href="#">Atomik::sound</a>
+    <nav class="navbar container-fluid navbar-expand-lg navbar-light bg-light position-fixed top-0 start-0">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="./">Atomik::sound</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="justify-content-end collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav">
                 <li class="nav-item">
-                    <a class="nav-link" id="current" aria-current="page"  href="./">Home</a>
+                    <a class="nav-link" id="current" href="./">Home</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="./secciones/productos">Productos</a>
@@ -41,29 +40,28 @@
                 </li>
                 </ul>
             </div>
+        </div>
+    </nav>
+    <main class="landing">
+        <div class="landing__mainImg">
+            <img src=".\img\landing.jpg" alt="imagen principal">
+        </div>
+        <aside class="landing__aside">
+            <div class="landing__content">
+                <h1>Titulo principal</h1>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                    Exercitationem nisi excepturi ea incidunt nulla quod aperiam 
+                    sunt non est, assumenda consequuntur veritatis iusto voluptas 
+                    provident eos nobis! Deleniti laudantium eius assumenda iste 
+                    sed, repellat harum provident voluptas deserunt a. Optio rem 
+                    labore cumque ipsam tenetur praesentium nobis, incidunt, earum, 
+                    deleniti perspiciatis non in repellendus.
+                </p>
+                <a href="./secciones/contacto/">Contactanos</a>
             </div>
-        </nav>
-        <main class="landing">
-            <div class="landing__mainImg">
-                <img src=".\img\landing.jpg" alt="imagen principal">
-            </div>
-            <aside>
-                <div class="landing__content">
-                    <h1>Titulo principal</h1>
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                        Exercitationem nisi excepturi ea incidunt nulla quod aperiam 
-                        sunt non est, assumenda consequuntur veritatis iusto voluptas 
-                        provident eos nobis! Deleniti laudantium eius assumenda iste 
-                        sed, repellat harum provident voluptas deserunt a. Optio rem 
-                        labore cumque ipsam tenetur praesentium nobis, incidunt, earum, 
-                        deleniti perspiciatis non in repellendus.
-                    </p>
-                    <a href="./secciones/contacto/">Contactanos</a>
-                </div>
-            </aside>
-        </main>
-    </div>
+        </aside>
+    </main>
     <section class="preview">
         <aside>
             <div class="preview__content">

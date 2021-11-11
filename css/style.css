@@ -1,3 +1,14 @@
+.main, .landing, .productLanding, .preview {
+  height: calc(100vh - 44.8px);
+  margin-top: 44.8px;
+}
+
+@media screen and (max-width: 990px) {
+  .main, .landing, .productLanding, .preview {
+    height: calc(100vh - 40px);
+    margin-top: 40px;
+  }
+}
 * {
   margin: 0;
   padding: 0;
@@ -70,6 +81,7 @@ nav ul li a:before {
 }
 nav ul li:hover a:before {
   transform: translateY(0%);
+  background-color: none;
 }
 
 footer {
@@ -85,7 +97,7 @@ footer {
   border: 0;
 }
 
-.landing aside, .productLanding aside, .preview aside {
+.preview aside, .landing__aside {
   margin: auto;
   height: 100%;
   width: 40%;
@@ -109,20 +121,17 @@ footer {
   text-align: justify;
 }
 
-.landing aside a, .productLanding aside a, .preview aside a {
+.preview aside a, .landing__aside a {
   color: orange;
 }
-.landing aside a:hover, .productLanding aside a:hover, .preview aside a:hover {
+.preview aside a:hover, .landing__aside a:hover {
   color: orange;
   text-decoration: underline;
 }
 
 .landing, .productLanding, .preview {
-  flex: 1;
   width: 100%;
-  height: 86vh;
   overflow: hidden;
-  position: relative;
   display: flex;
   align-content: center;
   justify-content: space-between;
@@ -132,7 +141,7 @@ footer {
   width: auto;
   height: 100%;
 }
-.landing aside a, .productLanding aside a, .preview aside a {
+.landing__aside a {
   display: block;
   text-align: center;
   font-size: 1.8rem;
@@ -163,14 +172,6 @@ footer {
 .preview__content h2 {
   font-family: "Raleway", sans-serif;
   font-size: 2rem;
-}
-.preview__container {
-  padding: 1rem;
-  right: 0;
-  display: grid;
-  grid-gap: 1rem;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr;
 }
 .preview__card {
   position: relative;
@@ -210,6 +211,62 @@ footer {
   background-color: white;
 }
 
+@media screen and (max-width: 768px) {
+  .landing__aside, .preview aside {
+    width: 100%;
+  }
+
+  .productLanding__mainImg, .landing__mainImg, .preview__container {
+    width: 100%;
+  }
+
+  .landing, .productLanding, .preview {
+    flex-direction: column;
+  }
+  .landing__aside {
+    position: absolute;
+    top: 0px;
+    background-color: rgba(13, 13, 18, 0.7);
+    color: white;
+    padding: 3rem;
+  }
+  .landing__content {
+    height: calc(100% - 40px);
+    margin-bottom: 0;
+    border: 2px solid white;
+    overflow: scroll;
+  }
+  .landing__content p {
+    background-color: #13131e;
+    margin: 0;
+    padding: 1rem;
+  }
+
+  .preview {
+    height: auto;
+  }
+}
+@media screen and (max-width: 510px) {
+  .landing__aside {
+    padding: 1rem;
+  }
+
+  .preview__container {
+    padding: 0.3rem;
+    grid-gap: 0.3rem;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+  }
+  .preview__card {
+    padding: 0.3rem;
+  }
+  .preview__card h5 {
+    font-size: 1.3rem;
+    margin: 0;
+    font-weight: 700;
+    background-color: rgba(255, 255, 255, 0.8);
+  }
+}
 .productLanding__mainImg img {
   width: auto;
   height: 100%;
@@ -275,14 +332,76 @@ footer {
   background-color: #fff;
 }
 
-.nosotrosMain, .contactoMain, .productosMain {
+@media screen and (max-width: 992px) {
+  .productLanding__aside {
+    padding: 1rem;
+  }
+}
+@media screen and (max-width: 768px) {
+  .productLanding {
+    height: auto;
+    display: flex;
+    flex-direction: column-reverse;
+    overflow: hidden;
+    position: relative;
+  }
+  .productLanding__mainImg {
+    max-height: calc(100vh - 40px);
+  }
+  .productLanding__mainImg img {
+    width: 100%;
+  }
+  .productLanding__aside {
+    flex: 1;
+    width: 100%;
+    padding: 1rem;
+    height: auto;
+  }
+  .productLanding__content {
+    border: 2px solid #13131e;
+  }
+  .productLanding h1 {
+    color: white;
+    text-shadow: 4px 4px 8px #13131e;
+    font-size: 2.8rem;
+    font-family: "Raleway", sans-serif;
+  }
+  .productLanding p {
+    transform: none;
+    width: 100%;
+  }
+
+  .details {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 510px) {
+  .details {
+    width: 100%;
+    overflow: scroll;
+    padding: 0.3rem;
+    font-size: 0.8rem;
+  }
+  .details__chart {
+    margin: 0;
+  }
+  .details__chart td {
+    padding: 0.5rem;
+  }
+  .details__chart td ul,
+.details__chart td ol {
+    padding-left: 1.5rem;
+    font-weight: 300;
+  }
+}
+.nosotrosMain, .contactoMain, .productosMain, .more {
+  flex: 1;
   width: 70%;
   margin: auto;
 }
 
 .main {
   width: 100%;
-  height: 86vh;
   padding: 3rem;
   background-image: url("../img/D0OoKHI.jpg");
   background-repeat: no-repeat;
@@ -346,6 +465,57 @@ footer {
   margin-bottom: 2rem;
 }
 
+@media screen and (max-width: 992px) {
+  .nosotrosMain, .contactoMain, .productosMain, .more {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 768px) {
+  .main__content {
+    width: 100%;
+  }
+  .main__content p {
+    width: 100%;
+    transform: translateX(0%);
+  }
+  .main__content:hover {
+    background-color: initial;
+  }
+  .main__content:hover p {
+    transform: translateX(0%);
+  }
+  .main__content:hover h1 {
+    font-size: 2.8rem;
+    margin-bottom: 2rem;
+  }
+}
+@media screen and (max-width: 510px) {
+  .main {
+    padding: 1rem;
+    min-height: calc(100vh - 40px);
+    height: auto;
+    display: flex;
+    flex-direction: column;
+  }
+  .main__content {
+    flex: 1;
+    padding: 1rem;
+  }
+
+  .more {
+    padding: 1rem;
+    padding-top: 3rem;
+  }
+  .more p {
+    padding: 1rem;
+    width: 100%;
+  }
+  .more h2 {
+    width: 100%;
+    font-size: 10vw;
+    margin-bottom: inherit;
+  }
+}
 .productosMain {
   display: flex;
   flex-direction: column;
@@ -353,7 +523,7 @@ footer {
 }
 .productosMain .product {
   width: 100%;
-  height: 40vh;
+  height: 40%;
   border-bottom: 1px solid black;
 }
 .productosMain .product a {
@@ -385,6 +555,7 @@ footer {
 .productosMain .product__desc p {
   flex: 1;
   text-align: justify;
+  font-size: 1rem;
   font-weight: 300;
 }
 .productosMain .product__desc h3 {
@@ -392,9 +563,28 @@ footer {
   font-size: 1.5rem;
 }
 
+@media screen and (max-width: 992px) {
+  .productosMain .product {
+    height: 40%;
+  }
+  .productosMain .product__image {
+    width: 30%;
+    height: 100%;
+    align-self: center;
+  }
+}
+@media screen and (max-width: 510px) {
+  .productosMain .product__desc p {
+    font-size: 0.8rem;
+  }
+  .productosMain .product__desc h3 {
+    font-size: 1rem;
+  }
+}
 .contactoMain {
   min-height: 86vh;
   padding: 5%;
+  overflow: scroll;
 }
 .contactoMain form {
   margin: auto;
@@ -457,6 +647,15 @@ footer {
 }
 .contactoMain form fieldset .boton--enviar:hover {
   background-color: #ffb500;
+}
+
+@media screen and (max-width: 510px) {
+  .contactoMain {
+    padding: 5% 0.5rem;
+  }
+  .contactoMain form {
+    padding: 0;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

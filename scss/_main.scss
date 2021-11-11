@@ -79,6 +79,7 @@ nav {
 			}
 			&:hover a:before {
 				transform: translateY(0%);
+				background-color: none;
 			}
 		}
 	}

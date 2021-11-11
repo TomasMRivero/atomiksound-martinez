@@ -5,6 +5,17 @@ $highlights-dark: indigo;
 $text-font-main: "Noto Sans Mono", monospace;
 $text-font-title: "Raleway", sans-serif;
 
+%nav-height {
+	height: calc(100vh - 44.8px);
+	margin-top: 44.8px;
+}
+@media screen and (max-width: 990px) {
+	%nav-height {
+		height: calc(100vh - 40px);
+		margin-top: 40px;
+	}
+}
+
 @import "main";
 @import "index";
 @import "producto";
