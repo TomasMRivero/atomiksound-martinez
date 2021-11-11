@@ -2,6 +2,7 @@
 	@extend .nosotrosMain;
 	min-height: 86vh;
 	padding: 5%;
+	overflow: scroll;
 	form {
 		margin: auto;
 		height: 100%;
@@ -64,6 +65,15 @@
 					}
 				}
 			}
+		}
+	}
+}
+
+@media screen and (max-width: 510px) {
+	.contactoMain {
+		padding: 5% 0.5rem;
+		form {
+			padding: 0;
 		}
 	}
 }
