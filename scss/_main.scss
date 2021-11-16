@@ -71,10 +71,18 @@ nav {
 		}
 	}
 }
-//}
 
 footer {
 	height: 14vh;
-	color: $main-white;
-	background-color: $highlights-dark;
+	color: $main-black;
+	background-color: $main-white;
+	display: flex;
+	align-content: center;
+	justify-content: center;
+	border-top: 1px solid $main-black;
+	h6 {
+		margin: auto;
+		text-align: center;
+		text-justify: center;
+	}
 }

@@ -86,8 +86,17 @@ nav ul li:hover a:before {
 
 footer {
   height: 14vh;
-  color: white;
-  background-color: indigo;
+  color: #13131e;
+  background-color: white;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  border-top: 1px solid #13131e;
+}
+footer h6 {
+  margin: auto;
+  text-align: center;
+  text-justify: center;
 }
 
 .productLanding__mainImg, .preview__container, .landing__mainImg {
@@ -583,7 +592,7 @@ footer {
 .contactoMain {
   min-height: 86vh;
   padding: 5%;
-  overflow: scroll;
+  overflow: hidden;
 }
 .contactoMain form {
   margin: auto;
