@@ -28,10 +28,11 @@
 		p {
 			padding: 1.5rem;
 			font-weight: 300;
+			font-size: 1rem;
 			text-align: justify;
 			color: $main-white;
 			background-color: $main-black;
-			width: 200%;
+			width: 150%;
 			transform: translateX(5%);
 			z-index: 100;
 		}
@@ -102,9 +103,7 @@
 			border: 2px solid $main-black;
 		}
 		h1 {
-			color: $main-white;
-			text-shadow: 4px 4px 8px $main-black;
-			font-size: 2.8rem;
+			font-size: 2rem;
 			font-family: $text-font-title;
 		}
 		p {

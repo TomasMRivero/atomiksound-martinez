@@ -293,10 +293,11 @@ footer {
 .productLanding__content p {
   padding: 1.5rem;
   font-weight: 300;
+  font-size: 1rem;
   text-align: justify;
   color: white;
   background-color: #13131e;
-  width: 200%;
+  width: 150%;
   transform: translateX(5%);
   z-index: 100;
 }
@@ -361,9 +362,7 @@ footer {
     border: 2px solid #13131e;
   }
   .productLanding h1 {
-    color: white;
-    text-shadow: 4px 4px 8px #13131e;
-    font-size: 2.8rem;
+    font-size: 2rem;
     font-family: "Raleway", sans-serif;
   }
   .productLanding p {
@@ -656,6 +655,18 @@ footer {
   .contactoMain form {
     padding: 0;
   }
+}
+.notFound {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+}
+.notFound a {
+  color: orange;
 }
 
 /*# sourceMappingURL=style.css.map */
